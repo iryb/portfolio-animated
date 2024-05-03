@@ -1,0 +1,24 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"first_name": {
+				"__TYPE__": "FieldContent",
+				"value": "soap",
+				"type": "Text"
+			},
+			"last_name": {
+				"__TYPE__": "FieldContent",
+				"value": "element",
+				"type": "Text"
+			},
+			"position": {
+				"__TYPE__": "FieldContent",
+				"value": "cook",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]
