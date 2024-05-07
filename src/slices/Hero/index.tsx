@@ -1,5 +1,11 @@
+"use client";
 import { Content, KeyTextField } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { MutableRefObject, useRef } from "react";
+
+gsap.registerPlugin(useGSAP);
 
 /**
  * Props for `Hero`.
@@ -10,6 +16,36 @@ export type HeroProps = SliceComponentProps<Content.HeroSlice>;
  * Component for "Hero" Slices.
  */
 const Hero = ({ slice }: HeroProps): JSX.Element => {
+  const container = useRef(null);
+
+  useGSAP(
+    () => {
+      let tl = gsap.timeline();
+
+      tl.fromTo(
+        ".name-animation",
+        {
+          x: -100,
+          opacity: 0,
+          rotate: -10,
+        },
+        {
+          x: 0,
+          opacity: 1,
+          rotate: 0,
+          ease: "elastic.out(1,0.3)",
+          duration: 1,
+          transformOrigin: "left top",
+          stagger: {
+            each: 0.1,
+            from: "random",
+          },
+        }
+      );
+    },
+    { scope: container }
+  );
+
   const splitLetters = (str: KeyTextField, key: string) => {
     if (!str) return;
     return str.split("").map((letter, index) => (
@@ -34,6 +70,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
             aria-label={
               slice.primary.first_name + " " + slice.primary.last_name
             }
+            ref={container}
           >
             <span className="block text-slate-300">
               {splitLetters(slice.primary.first_name, "fname")}
