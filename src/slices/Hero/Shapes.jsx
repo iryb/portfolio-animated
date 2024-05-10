@@ -39,30 +39,53 @@ function Geometries() {
       r: 0.3,
       geometry: new THREE.IcosahedronGeometry(3),
     },
+    {
+      position: [-2, 1.5, 0],
+      r: 0.9,
+      geometry: new THREE.OctahedronGeometry(0.7),
+    },
+    {
+      position: [2.2, 1, 0.7],
+      r: 0.5,
+      geometry: new THREE.DodecahedronGeometry(0.8),
+    },
+    {
+      position: [-2.2, -0.8, 0.7],
+      r: 0.8,
+      geometry: new THREE.TorusGeometry(0.8),
+    },
+    {
+      position: [1.4, -1.2, 2.3],
+      r: 0.7,
+      geometry: new THREE.ConeGeometry(0.6, 1.5, 5),
+    },
   ];
 
   const materials = [
-    new THREE.MeshNormalMaterial(),
-    new THREE.MeshStandardMaterial({ color: 0x2ecc71, roughness: 0 }),
     new THREE.MeshStandardMaterial({
-      color: 0xeb4d4b,
-      roughness: 0.1,
-      metalness: 0.5,
+      color: 0x1976d2,
+      roughness: 0,
+      metalness: 0.8,
     }),
     new THREE.MeshStandardMaterial({
-      color: 0xc7ecee,
-      roughness: 0.1,
-      metalness: 0.5,
+      color: 0x2196f3,
+      roughness: 0,
+      metalness: 0.8,
     }),
     new THREE.MeshStandardMaterial({
-      color: 0x7ed6df,
-      roughness: 0.1,
-      metalness: 0.5,
+      color: 0x29b6f6,
+      roughness: 0,
+      metalness: 0.8,
     }),
     new THREE.MeshStandardMaterial({
-      color: 0xf6e58d,
-      roughness: 0.1,
-      metalness: 0.5,
+      color: 0x81d4fa,
+      roughness: 0,
+      metalness: 0.8,
+    }),
+    new THREE.MeshStandardMaterial({
+      color: 0x0d47a1,
+      roughness: 0,
+      metalness: 0.8,
     }),
   ];
 
