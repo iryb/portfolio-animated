@@ -15,13 +15,16 @@
     "@prismicio/next": "^1.5.0",
     "@prismicio/react": "^2.7.4",
     "@react-three/drei": "^9.105.6",
+    "clsx": "^2.1.1",
     "gsap": "^3.12.5",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-icons": "^5.2.1"
   },
   "devDependencies": {
     "@slicemachine/adapter-next": "^0.3.38",
+    "@tailwindcss/typography": "^0.5.13",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
