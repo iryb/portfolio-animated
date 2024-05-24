@@ -17,7 +17,7 @@ const About = ({ slice }: AboutProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="max-w-7xl mx-auto px-4 md:px-10 h-screen"
+      className="max-w-7xl mx-auto px-4 md:px-10 my-[5rem]"
     >
       <div className="grid gap-x-8 gap-y-6 md:grid-cols-[2fr,1fr]">
         <Heading as="h1" size="xl" className="col-start-1">
