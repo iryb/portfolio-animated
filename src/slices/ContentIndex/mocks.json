@@ -1,0 +1,35 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "hand",
+				"type": "Text"
+			},
+			"content_type": {
+				"__TYPE__": "FieldContent",
+				"value": "Project",
+				"type": "Select"
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Qui laboris occaecat qui culpa ex cupidatat commodo tempor. Ullamco magna id incididunt."
+						}
+					}
+				]
+			},
+			"link_title": {
+				"__TYPE__": "FieldContent",
+				"value": "moment",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]
