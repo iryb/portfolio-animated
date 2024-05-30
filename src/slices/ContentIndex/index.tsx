@@ -33,7 +33,7 @@ const ContentIndex = async ({
         {slice.primary.title}
       </Heading>
       {isFilled.richText(slice.primary.description) && (
-        <div className="prose prose-xl prose-invert mb-10">
+        <div className="prose prose-xl prose-invert mb-10 max-w-full">
           <PrismicRichText field={slice.primary.description} />
         </div>
       )}
