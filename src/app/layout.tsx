@@ -23,7 +23,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-        <div className="absolute inset-0 -z-50 max-h-screen bg-gradient-to-tr from-slate-950 from-10% to-slate-700 to-80%"></div>
+        <div className="absolute inset-0 -z-50 max-h-screen bg-gradient-to-t from-slate-900 from-20% to-slate-700 to-80%" />
       </body>
     </html>
   );
